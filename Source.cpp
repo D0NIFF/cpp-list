@@ -194,21 +194,17 @@ void List<T>::pop_back()
 
 int main()
 {
-
-	setlocale(LC_ALL, "ru");
-
-
 	List<int> lst;
-	lst.push_front(5);
-	lst.push_front(7);
-	lst.push_front(101);
+	lst.push_front(349);
+	lst.push_front(705);
+	lst.push_front(555);
 
 	for (int i = 0; i < lst.size(); i++)
 	{
 		std::cout << lst[i] << std::endl;
 	}
 
-	std::cout << std::endl << "pop_back " << std::endl << std::endl;
+	std::cout << std::endl << "pop_back: " << std::endl << std::endl;
 
 	lst.pop_back();
 
